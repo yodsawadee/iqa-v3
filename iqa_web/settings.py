@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-import confidential_password
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -21,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = key
+SECRET_KEY = 'qj=kov0a8j7o@#o2bm119&_o8_fn3&5san!h+^ixk%r!29gwhy'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -80,6 +79,20 @@ WSGI_APPLICATION = 'iqa_web.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
+
+###databse localhost
+##name = 'iqa3'
+##user = 'postgres'
+##password = '1234'
+##host = 'localhost'
+##port = 5432
+
+###databse remote sever
+name = 'df6o8lha7r1edj'
+user = 'fxpxjtxfhrvnco'
+password = '3cd7c82b1f942a3c225d71a5bade351c59f90460bddaef56704a48849cae737c'
+host = 'ec2-46-137-113-157.eu-west-1.compute.amazonaws.com'
+port = 5432
 
 DATABASES = {
    'default': {
