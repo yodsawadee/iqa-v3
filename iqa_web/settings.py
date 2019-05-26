@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
+import confidential_password
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,7 +21,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'qj=kov0a8j7o@#o2bm119&_o8_fn3&5san!h+^ixk%r!29gwhy'
+SECRET_KEY = key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -44,10 +45,6 @@ INSTALLED_APPS = [
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-# pip install django-crispy-forms
-# pip install selenium
-# pip install coverage
-# pip install -U pytest
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -91,43 +88,15 @@ DATABASES = {
        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3.4'),
 
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'iqa3',
-       'USER':'postgres',
-       'PASSWORD':'1234',
-       'HOST':'localhost',
-       'PORT':5432
+       'NAME': name,
+       'USER': user,
+       'PASSWORD': password,
+       'HOST': host,
+       'PORT': port
    }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3.7'),
-#     }
-# }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'iqa2',
-#         'USER': 'postgres',
-#         'PASSWORD': '1234',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
-
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'd1n23cgnd7ja1p',
-#         'USER': 'geibdlrcdjqrco',
-#         'PASSWORD': '4ec973bde7ae11d0418d99d15db606f783ee63b7d12eb02e2ae520e45a1f2908',
-#         'HOST': 'ec2-54-221-253-228.compute-1.amazonaws.com',
-#         'PORT': '5432',
-#     }
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
