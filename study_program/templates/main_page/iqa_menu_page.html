@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <br /><br />
+    <div class="col">
+        <a class="btn col-md-1"><br /><b></b></a>
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        <a id="Notice-btn" class="btn col-md-2" href="{% url 'all_notificaiton' %}">
+            <br /><b><br />Notice<br />(แจ้งเตือน)<br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        <a id="Recommendation-btn" class="btn col-md-2" href="{% url 'committee_recommendation' %}">
+            <br /><b>IQA Committee<br />Recommendation<br />(แนะนำกรรมการ)<br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        <a id="Calendar-btn" class="btn col-md-2" href="{% url 'assessment_calendar' %}">
+            <br /><b>Assessment<br />Calendar<br />(ปฏิทินการประเมิน)<br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        <a id="Inbox-btn" class="btn col-md-2" href="{% url 'inbox' %}">
+            <br /><b><br />Inbox<br />(ข้อความ)<br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        
+    </div>
+</div>
+
+{% endblock %}

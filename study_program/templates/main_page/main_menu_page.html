@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <br /><br />
+    <div class="col">
+        <a class="btn col-md-1"><br /><b></b></a>
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        <a id="StudyProgram-btn" class="btn col-md-2" href="{% url 'all_program' %}">
+            <br /><b><br />Study Program<br />(หลักสูตร)<br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        <a id="Professors-btn" class="btn col-md-2" href="{% url 'all_professor' %}">
+            <br /><b><br />Professors<br />(อาจารย์)<br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        <a id="Assessment-btn" class="btn col-md-2" href="{% url 'assessment_menu' %}">
+            <br /><b><br />Assessment<br />(การประเมินผล)<br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        {% if request.user.is_superuser %}
+        <a id="IQA-btn" class="btn col-md-2" href="{% url 'iqa_menu' %}">
+            <br /><b><br />IQA Menu<br />(ประกันคุณภาพ)<br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+        {% else %}
+
+        <a id="Faculty-btn" class="btn col-md-2" href="{% url 'faculty_menu' %}">
+            <br /><b><br />Faculty Menu<br />(เมนูของคณะ)<br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+        {% endif %}
+
+    </div>
+</div>
+
+{% endblock %}

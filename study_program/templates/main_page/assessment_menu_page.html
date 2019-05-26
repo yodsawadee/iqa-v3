@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <br /><br />
+    <div class="col">
+        <a class="btn col-md-1"><br /><b></b></a>
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        <a id="AssessmentResults-btn" class="btn col-md-2" href="{% url 'all_assessment' %}">
+            <br /><b>Assessment<br />Results<br />(ผลการประเมิน)<br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        <a id="CommitteeList-btn" class="btn col-md-2" href="{% url 'all_committee' %}">
+            <br /><b>Committee<br />List<br />(คณะกรรมการ)<br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        <a id="TEMP-btn" class="btn col-md-2" href="{% url 'assessment_menu' %}">
+            <br /><b><br />TEMP<br /><br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+        <a id="TEMP-btn" class="btn col-md-2" href="{% url 'assessment_menu' %}">
+            <br /><b><br />TEMP<br /><br />___________________</b></a>
+
+        <a class="btn col-md-0.5"><br /><b></b></a>
+
+    </div>
+</div>
+
+{% endblock %}

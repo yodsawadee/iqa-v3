@@ -1,0 +1,1027 @@
+/* nf {
+    color: #F2EEE7;
+}
+
+nf:hover {
+    color: #000000;
+} */
+
+
+b {
+    color: #FFFEFF;
+    font-weight: bolder;
+}
+
+b:hover {
+    color: #605A60;
+    font-weight: bolder;
+}
+/* 
+c .nav-link {
+    color: #F2EEE7;
+}  */
+
+/* -------------------------------- base -------------------------------- */
+#Home-nav-btn {
+    color: #605A60;
+    padding: 0px 10px 0px 0px;
+}
+#Home-nav-btn:hover {
+    color: rgba(255, 255, 255, 0.63);
+}
+
+#nav-text {
+    color: #605A60;
+    font-weight: bold;
+    font-size: 110%;
+}
+#nav-text:hover nf { 
+    color: rgba(255, 255, 255, 0.63);
+    font-weight: bold;
+}
+#sign-out-alt {
+    padding: 0px 5px 0px 5px;
+}
+#sign-out-alt:hover {
+    color: rgba(255, 255, 255, 0.63);
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+}
+
+nav.navbar.navbar-expand-lg {
+    background-color: #D7D6D7;
+}
+
+/* -------------------------------- main_menu -------------------------------- */
+
+#StudyProgram-btn {
+    background-color: #4CCEDC;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+    border: 2px solid #4CCEDC;
+}
+#StudyProgram-btn:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #4CCEDC;
+}
+#StudyProgram-btn:hover b{
+    color: #4CCEDC;
+    font-weight: bolder;
+}
+
+#Professors-btn {
+    background-color: #F9B346;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+}
+#Professors-btn:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #F9B346;
+}
+#Professors-btn:hover b{
+    color: #F9B346;
+    font-weight: bolder;
+}
+
+#Assessment-btn {
+    background-color: #FF7282;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+}
+#Assessment-btn:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #FF7282;
+}
+#Assessment-btn:hover b{
+    color: #FF7282;
+    font-weight: bolder;
+}
+
+#IQA-btn {
+    background-color: #16C985;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+}
+#IQA-btn:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #16C985;
+}
+#IQA-btn:hover b{
+    color: #16C985;
+    font-weight: bolder;
+}
+
+#Faculty-btn {
+    background-color: #16C985;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+}
+#Faculty-btn:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #16C985;
+}
+#Faculty-btn:hover b{
+    color: #16C985;
+    font-weight: bolder;
+}
+
+/* -------------------------------- iqa_menu_menu -------------------------------- */
+
+#Notice-btn {
+    background-color: #FFFFFF;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+    border: 2px solid #4CCEDC;
+}
+#Notice-btn b {
+    color: #4CCEDC;
+    font-weight: bolder;
+}
+#Notice-btn:hover {
+    background-color: #4CCEDC;
+    border: 2px solid #4CCEDC;
+}
+#Notice-btn:hover b {
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+#Recommendation-btn {
+    background-color: #FFFFFF;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+    border: 2px solid #F9B346;
+}
+#Recommendation-btn b {
+    color: #F9B346;
+    font-weight: bolder;
+}
+#Recommendation-btn:hover {
+    background-color: #F9B346;
+    border: 2px solid #F9B346;
+}
+#Recommendation-btn:hover b {
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+#Calendar-btn {
+    background-color: #FFFFFF;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+    border: 2px solid #FF7282;
+}
+#Calendar-btn b {
+    color: #FF7282;
+    font-weight: bolder;
+}
+#Calendar-btn:hover {
+    background-color: #FF7282;
+    border: 2px solid #FF7282;
+}
+#Calendar-btn:hover b {
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+#Inbox-btn {
+    background-color: #FFFFFF;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+    border: 2px solid #16C985;
+}
+#Inbox-btn b {
+    color: #16C985;
+    font-weight: bolder;
+}
+#Inbox-btn:hover {
+    background-color: #16C985;
+    border: 2px solid #16C985;
+}
+#Inbox-btn:hover b {
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+/* -------------------------------- faculty_menu -------------------------------- */
+
+#StudyProgram2-btn {
+    background-color: #FFFFFF;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+    border: 2px solid #4CCEDC;
+}
+#StudyProgram2-btn b {
+    color: #4CCEDC;
+    font-weight: bolder;
+}
+#StudyProgram2-btn:hover {
+    background-color: #4CCEDC;
+    border: 2px solid #4CCEDC;
+}
+#StudyProgram2-btn:hover b {
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+#Appointment-btn {
+    background-color: #FFFFFF;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+    border: 2px solid #F9B346;
+}
+#Appointment-btn b {
+    color: #F9B346;
+    font-weight: bolder;
+}
+#Appointment-btn:hover {
+    background-color: #F9B346;
+    border: 2px solid #F9B346;
+}
+#Appointment-btn:hover b {
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+
+/* -------------------------------- assessment_menu -------------------------------- */
+
+/* .btn.col-md-2:hover {
+    padding-bottom: 15%;
+} */
+
+#AssessmentResults-btn {
+    background-color: #FF7282;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+}
+#AssessmentResults-btn:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #FF7282;
+}
+#AssessmentResults-btn:hover b{
+    color: #FF7282;
+    font-weight: bolder;
+}
+
+#CommitteeList-btn {
+    background-color: #FE7B45;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+}
+#CommitteeList-btn:hover {
+    background-color: #FFFFFF;
+    border: 2px solid #FE7B45;
+}
+#CommitteeList-btn:hover b{
+    color: #FE7B45;
+    font-weight: bolder;
+}
+
+#TEMP-btn {
+    background-color: #FFFFFF;
+    height: 100%;
+    padding-top: 15.5%;
+    padding-bottom: 10%;
+    border: 2px solid #605A60;
+}
+#TEMP-btn b {
+    color: #605A60;
+    font-weight: bolder;
+}
+#TEMP-btn:hover {
+    background-color: #605A60;
+    border: 2px solid #605A60;
+}
+#TEMP-btn:hover b {
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+
+/* -------------------------------- all_program -------------------------------- */
+
+#studyProgram-container {
+    background-color: #4CCEDC;
+    /* border: 1px solid #707070; */
+}
+
+#studyProgram-container2 {
+    background-color: #4CCEDC;
+    padding-bottom: 15px;
+}
+
+#studyProgram-btn {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+#studyProgram-btn:hover {
+    color: #4CCEDC;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+#studyProgram-btn2 {
+    border: 2px solid #4CCEDC;
+    color: #4CCEDC;
+}
+#studyProgram-btn2:hover {
+    color: #FFFFFF;
+    background-color: #4CCEDC;
+    border: 2px solid #4CCEDC;
+}
+
+/* #studyProgram-list a:hover {
+    color: hsl(186, 67%, 58%);
+} */
+
+/* PAGE NUMBER */
+#studyProgram-container .pagination-number {
+    padding: 0.8em 0.8em;
+    border-radius: 2px;
+    color: #fff;
+    background-color: hsl(186, 57%, 58%);
+}
+#studyProgram-container .pagination-number:hover, #studyProgram-container .pagination-current {
+    background-color: hsl(186, 37%, 58%);
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#studyProgram-container .pagination-action {
+    margin: 0 0.1em;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    color: #fff;
+    font-size: 1.3em;
+}
+#studyProgram-container .pagination-action:hover, #studyProgram-container .pagination-previous, #studyProgram-container .pagination-next {
+    color: hsl(186, 37%, 58%);
+}
+
+
+/* -------------------------------- program_detail -------------------------------- */
+
+#program_detail-container-title {
+    background-color: #4CCEDC;
+    padding-bottom: 15px;
+    /* border: 1px solid #707070; */
+}
+
+#basic_info-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#responsible_professor-container {
+    background-color: #4CCEDC;
+    /* border: 1px solid #707070; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#assesment_result-container {
+    background-color: #4CCEDC;
+    /* border: 1px solid #707070; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* -------------------------------- all_professor -------------------------------- */
+
+#all_professor-container {
+    background-color: #F9B346;
+    /* border: 1px solid #707070; */
+}
+
+#all_professor-container2 {
+    background-color: #F9B346;
+    padding-bottom: 15px;
+}
+
+#professor-btn {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+#professor-btn:hover {
+    color: #F9B346;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+#professor-btn2 {
+    border: 2px solid #F9B346;
+    color: #F9B346;
+}
+#professor-btn2:hover {
+    color: #FFFFFF;
+    background-color: #F9B346;
+    border: 2px solid #F9B346;
+}
+
+/* #professor-list a:hover {
+    color: hsl(37, 94%, 63%);
+} */
+
+/* PAGE NUMBER */
+#all_professor-container .pagination-number {
+    padding: 0.8em 0.8em;
+    border-radius: 2px;
+    color: #fff;
+    background-color: hsl(37, 84%, 63%);
+}
+#all_professor-container .pagination-number:hover, #all_professor-container .pagination-current {
+    background-color: hsl(37, 64%, 63%);
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#all_professor-container .pagination-action {
+    margin: 0 0.1em;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    color: #fff;
+    font-size: 1.3em;
+}
+#all_professor-container .pagination-action:hover, #all_professor-container .pagination-previous, #all_professor-container .pagination-next {
+    color: hsl(37, 64%, 63%);
+}
+
+/* -------------------------------- professor_profile -------------------------------- */
+
+#professor_profile-container-title {
+    background-color: #F9B346;
+    padding-bottom: 15px;
+    /* border: 1px solid #707070; */
+}
+
+#education-info-container {
+    background-color: #F9B346;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#responsible_program-container {
+    background-color: #F9B346;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#committee_profile-container {
+    background-color: #F9B346;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* -------------------------------- all_assessment -------------------------------- */
+
+#all_assessment-container {
+    background-color: #FF7282;
+    /* border: 1px solid #707070; */
+}
+
+#all_assessment-container2 {
+    background-color: #FF7282;
+    padding-bottom: 15px;
+}
+
+#assessment-btn {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+#assessment-btn:hover {
+    color: #FF7282;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+#assessment-btn2 {
+    border: 2px solid #FF7282;
+    color: #FF7282;
+}
+#assessment-btn2:hover {
+    color: #FFFFFF;
+    background-color: #FF7282;
+    border: 2px solid #FF7282;
+}
+
+/* #assessment-list a:hover {
+    color: hsl(353, 100%, 72%);
+} */
+
+/* PAGE NUMBER */
+#all_assessment-container .pagination-number {
+    padding: 0.8em 0.8em;
+    border-radius: 2px;
+    color: #fff;
+    background-color: hsl(353, 90%, 72%);
+}
+#all_assessment-container .pagination-number:hover, #all_assessment-container .pagination-current {
+    background-color: hsl(353, 70%, 72%);
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#all_assessment-container .pagination-action {
+    margin: 0 0.1em;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    color: #fff;
+    font-size: 1.3em;
+}
+#all_assessment-container .pagination-action:hover, #all_assessment-container .pagination-previous, #all_assessment-container .pagination-next {
+    color: hsl(353, 70%, 72%);
+}
+
+/* -------------------------------- assessment_result -------------------------------- */
+
+#assessment_result-container-title {
+    background-color: #FF7282;
+    padding-bottom: 15px;
+    /* border: 1px solid #707070; */
+}
+
+#responsible_committe-container {
+    background-color: #FF7282;
+    /* border: 1px solid #707070; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#aun-container {
+    background-color: #FF7282;
+    /* border: 1px solid #707070; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* -------------------------------- all_committee -------------------------------- */
+
+#all_committee-container {
+    background-color: #FE7B45;
+    /* border: 1px solid #707070; */
+}
+
+#all_committee-container2 {
+    background-color: #FE7B45;
+    padding-bottom: 15px;
+}
+
+#committee-btn {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+#committee-btn:hover {
+    color: #FE7B45;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+#committee-btn2 {
+    border: 2px solid #FE7B45;
+    color: #FE7B45;
+}
+#committee-btn2:hover {
+    color: #FFFFFF;
+    background-color: #FE7B45;
+    border: 2px solid #FE7B45;
+}
+
+/* #committee-list a:hover {
+    color: hsl(18, 99%, 63%);
+} */
+
+/* PAGE NUMBER */
+#all_committee-container .pagination-number {
+    padding: 0.8em 0.8em;
+    border-radius: 2px;
+    color: #fff;
+    background-color: hsl(18, 89%, 63%);
+}
+#all_committee-container .pagination-number:hover, #all_committee-container .pagination-current {
+    background-color: hsl(18, 69%, 63%);
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#all_committee-container .pagination-action {
+    margin: 0 0.1em;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    color: #fff;
+    font-size: 1.3em;
+}
+#all_committee-container .pagination-action:hover, #all_committee-container .pagination-previous, #all_committee-container .pagination-next {
+    color: hsl(18, 69%, 63%);
+}
+
+
+/* -------------------------------- committee_detail -------------------------------- */
+
+#committee_detail-container-title {
+    background-color: #FE7B45;
+    padding-bottom: 15px;
+    /* border: 1px solid #707070; */
+}
+
+#assessment_result-container {
+    background-color: #FE7B45;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ================================================================================ */
+
+/* PAGE NUMBER */
+
+.pagination {
+    text-align: center;
+    /* margin-top: 1em; */
+}
+
+.pagination-number {
+    padding: 0.8em 0.8em;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #6D85C7;
+}
+
+.pagination-number:hover, .pagination-current {
+    background-color: #3354AA;
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.pagination-action {
+    margin: 0 0.1em;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    color: #B9B9B9;
+    font-size: 1.3em;
+}
+
+.pagination-action:hover, .pagination-previous, .pagination-next {
+    color: #3354AA;
+}
+
+/* ================================================================================ */
+
+
+/* -------------------------------- assessment_calendar -------------------------------- */
+#calendar-container {
+    /* border: 2px solid #FF7282; */
+    border: 1px solid #D7D6D7;
+}
+
+#calendar-container h2 {
+    /* color: #FF7282; */
+    color: #707070;
+}
+
+#calendar-container-nav {
+    /* background-color: #FF7282; */
+    background-color: #707070;
+}
+
+#exclamation-circle-icon {
+    /* color: #FF7282; */
+    color: #707070;
+    display: inline-block;
+}
+#exclamation-circle-icon:hover {
+    color: rgb(170, 55, 51);
+}
+
+#angle-double-icon {
+    /* color: #FF7282; */
+    color: #707070;
+    display: inline-block;
+}
+#angle-double-icon:hover {
+    color: rgb(170, 55, 51);
+}
+
+#calendar-table-container {
+    /* border: 2px solid #FF7282; */
+    border: 1px solid #D7D6D7;
+}
+#calendar-table-container h5 {
+    height: 100%;
+    /* color: #FF7282; */
+    color: #707070;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+#calendar-table-container .col {
+    padding: 0px 0px;
+}
+#calendar-table-container .date_name-btn{
+    width: 100%; 
+    height: 100%;
+    color: #707070;
+    font-weight: bolder;
+    /* background-color: #FF7282; */
+    background-color: #D7D6D7;
+    border: 1px solid #FFFFFF;
+    padding: 10px 10px;
+}
+#calendar-table-container .btn {
+    width: 100%; 
+    height: 100%;
+    /* color: #FF7282; */
+    color: #707070;
+    font-weight: bolder;
+    background-color: #FFFFFF;
+    /* border: 2px solid #FF7282; */
+    border: 1px solid #D7D6D7;
+    padding: 15px 15px;
+}
+/* #calendar-table-container:hover .btn {
+    color: #FFFFFF;
+    background-color: #FF7282;
+    border: 2px solid #FF7282;
+} */
+
+#exclamation-icon {
+    color: rgb(201, 22, 22);
+}
+
+#mor_af-circle-icon {
+    color: #F9B346;
+}
+#mor-circle-icon {
+    color: #4CCEDC;
+}
+#af-circle-icon {
+    color: #16C985;
+}
+
+/* -------------------------------- Faculty's Study Program -------------------------------- */
+#facultyStudyProgram-container {
+    /* background-color: #F9B346; */
+    background-color: #4CCEDC;
+}
+
+#facultyStudyProgram-container2 {
+    background-color: #4CCEDC;
+    padding-bottom: 15px;
+}
+
+#facultyStudyProgram-btn {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+#facultyStudyProgram-btn:hover {
+    color: #4CCEDC;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+#facultyStudyProgram-btn2 {
+    border: 2px solid #4CCEDC;
+    color: #4CCEDC;
+}
+#facultyStudyProgram-btn2:hover {
+    color: #FFFFFF;
+    background-color: #4CCEDC;
+    border: 2px solid #4CCEDC;
+}
+
+/* -------------------------------- committee_appointment -------------------------------- */
+#committee_appointment-container {
+    /* background-color: #F9B346; */
+    background-color: #F9B346;
+}
+
+#committee_appointment-container2 {
+    background-color: #F9B346;
+    padding-bottom: 15px;
+}
+
+#committee_appointment-btn {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+#committee_appointment-btn:hover {
+    color: #F9B346;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+#committee_appointment-btn2 {
+    border: 2px solid #F9B346;
+    color: #F9B346;
+}
+#committee_appointment-btn2:hover {
+    color: #FFFFFF;
+    background-color: #F9B346;
+    border: 2px solid #F9B346;
+}
+
+
+/* -------------------------------- assessment_calendar_detail -------------------------------- */
+#assessment_calendar_detail-title-nav {
+    /* background-color: #FF7282; */
+    background-color: #FFFFFF;
+    border: 2px solid #D7D6D7;
+}
+
+#assessment_calendar_detail-nav {
+    /* background-color: #FF7282; */
+    background-color: #D7D6D7;
+}
+
+#assessment_calendar_detail-info {
+    /* background-color: #FF7282; */
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #D7D6D7;
+}
+
+/* -------------------------------- inbox_main_page -------------------------------- */
+#inbox_main_page-container {
+    background-color: #16C985;
+    /* border: 1px solid #D7D6D7; */
+}
+
+#inbox_main_page-container-nav {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#inbox_main_page-container-nav h5 {
+    color: rgb(0, 0, 0);
+    /* font-weight: bolder; */
+    /* background-color: #FF7282; */
+    background-color: #FFFFFF;
+    padding: 10px 10px;
+    margin: 0px 0px 0px;
+}
+
+#CreateIssue-btn {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+#CreateIssue-btn:hover {
+    color: hsl(157, 80%, 44%);
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+/* PAGE NUMBER */
+#inbox_main_page .pagination-number {
+    padding: 0.8em 0.8em;
+    border-radius: 2px;
+    color: #fff;
+    background-color: hsl(157, 70%, 44%);
+}
+#inbox_main_page .pagination-number:hover, #inbox_main_page .pagination-current {
+    background-color: hsl(157, 50%, 44%);
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#inbox_main_page .pagination-action {
+    margin: 0 0.1em;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    color: #fff;
+    font-size: 1.3em;
+}
+#inbox_main_page .pagination-action:hover, #inbox_main_page .pagination-previous, #inbox_main_page .pagination-next {
+    color: hsl(157, 50%, 44%);
+}
+
+/* -------------------------------- notice -------------------------------- */
+#notice-container {
+    background-color: #4CCEDC;
+}
+/* PAGE NUMBER */
+#notice-container .pagination-number {
+    padding: 0.8em 0.8em;
+    border-radius: 2px;
+    color: #fff;
+    background-color: hsl(186, 57%, 58%);
+}
+#notice-container .pagination-number:hover, #notice-container .pagination-current {
+    background-color: hsl(186, 37%, 58%);
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#notice-container .pagination-action {
+    margin: 0 0.1em;
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    color: #fff;
+    font-size: 1.3em;
+}
+#notice-container .pagination-action:hover, #notice-container .pagination-previous, #notice-container .pagination-next {
+    color: hsl(186, 37%, 58%);
+}
+
+/* -------------------------------- FORM -------------------------------- */
+/* #id_content.textinput.textInput.form-control {
+    height: 200px;
+    background-color: rgb(236, 88, 88);
+    input: clear;
+} */
+
+/* -------------------------------- issue_detail -------------------------------- */
+#issue_detail-container {
+    background-color: #16C985;
+    color: #FFFFFF;
+}
+#issue_detail-container2 {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#comment-container-user {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 10px;
+}
+
+#comment-container-notuser {
+    background-color: hsl(157, 50%, 84%);
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 10px;
+}
+
+#issue_detail-container h3 {
+    margin: 0px 0px 0px 0px;
+}
+
+#issue_detail-btn {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+#issue_detail-btn:hover {
+    color: #16C985;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+
+/* -------------------------------- Committee Recommendation -------------------------------- */
+
+#committee_recommendation-container {
+    background-color: #F9B346;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#committee_recommendation-program-container {
+    background-color: white;
+    border: 1px solid #F9B346;
+    /* border: 1px solid rgba(0,0,0,.125); */
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
+#committee_recommendation-en-container {
+    background-color: #F9B346;
+    color: white;
+    /* border: 1px solid #FFFFFF; */
+}
+
+#committee_recommendation-professor-container {
+    background-color: #FFFFFF;
+}
+
+#committee_recommendation-page-current-btn {
+    padding: 0.8em 0.8em;
+    color: #fff;
+    font-weight: bolder;
+    font: 18px;
+    background-color: hsl(37, 64%, 63%);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#committee_recommendation-page-btn {
+    padding: 0.8em 0.8em;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: hsl(37, 94%, 63%);
+    font-weight: bolder;
+    /* border: 1px solid rgba(0,0,0,.125); */
+}
+#committee_recommendation-page-btn:hover {
+    background-color: hsl(37, 64%, 63%);
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}

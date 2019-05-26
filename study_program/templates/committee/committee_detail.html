@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <br />
+    <br />
+
+    <div id="committee_detail-container-title" class="container">
+        <br />
+        <div class="col">
+            <div class="row">
+                {% if request.user.is_superuser %}
+                <div class="col-md-10 mr-2">
+                    <h3 style="color: white;">{{ committee_detail.assessment_level }} : {{ committee_detail.professor_id.name_surname }} </h3>
+                </div>
+                <!-- EDIT -->
+                <div class="ml-auto">
+                    <form method="GET" action="{% url 'edit_committee_profile' committee_id %}">
+                        <button id="committee-btn" type="submit" class="btn btn-outline-success">Edit Profile</button>
+                    </form>
+                </div>
+                {% else %}
+                <div class="col">
+                    <h3 style="color: white;">{{ committee_detail.assessment_level }} : {{ committee_detail.professor_id.name_surname }} </h3>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <!-- BASIC INFO -->
+    <div id="basic_info-container" class="container">
+        <div class="row">
+            <div class="col-md-10">
+                <h5><b style="color:black;">code:</b> {{ committee_detail.code }}</h5>
+                <h5><b style="color:black;">year:</b> {{ committee_detail.year }}</h5>
+                <h5><b style="color:black;">profession:</b> {{ committee_detail.profession }}</h5>
+            </div>
+            <div class="ml-auto mr-3">
+                <a id="committee-btn2" class="btn btn-outline-success" href="{% url 'professor_profile' professor_profile %}">FULL PROFILE</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ASSESSMENT RESULT -->
+    <div id="assessment_result-container" class="container">
+        <div class="col">
+            <h4 style="color: white;">Assessment Result ( {{ committee_detail.year }} )</h4>
+        </div>
+
+    </div>
+
+    <!-- ASSESSMENT RESULT LIST -->
+    <div id="committee-list" class=bg-light>
+        <ul class="list-group">
+            {% for assessment in assessment_list %}
+            <a class="list-group-item list-group-item-light bg-light" href="{% url 'assessment_result' assessment.id %}">
+                <h6 style="text-align: left; width:98%; display: inline-block;">
+                    {{ assessment.program_id }}
+                </h6>
+                <h6 style="text-align: right; display: inline-block;">
+                    <i id="angle-right-icon" class="fas fa-angle-right"></i>
+                </h6>
+            </a>
+            {% endfor %}
+        </ul>
+    </div>
+    <br />
+    <br />
+
+
+</div>
+
+
+{% endblock %}

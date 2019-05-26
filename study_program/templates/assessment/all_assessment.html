@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container">
+
+    <br />
+    <br />
+    <!-- ASSWSSMENT LIST HEADER -->
+    <div id="all_assessment-container" class="container">
+        <br />
+        <div class="col">
+            <div class="row">
+                {% if request.user.is_superuser %}
+                <div class="col-md-6 mr-4">
+                    <h1 style="color: white;">Assessment List</h1>
+                </div>
+
+                <div class="ml-auto mr-3">
+                    <div class="row">
+                    <form method="GET" action="{% url 'export_assessment_csv' %}">
+                        <button id="assessment-btn" type="submit" class="btn ml-4 mr-4">Export องค์1 CSV</button>
+                    </form>
+                    <form method="GET" action="{% url 'export_aun_csv' %}">
+                        <button id="assessment-btn" type="submit" class="btn mr-4">Export AUN CSV</button>
+                    </form>
+                    </div>
+                </div>
+
+                <!-- CREATE ASSESSMENT -->
+                <div class="ml-auto">
+                    <form method="GET" action="{% url 'create_assessment_result' %}">
+                        <button id="assessment-btn" type="submit" class="btn ml-4 mr-4">Add Assessment</button>
+                    </form>
+                </div>
+
+                {% else %}
+                <div class="col-md-6 mr-4">
+                    <h1 style="color: white;">Assessment List</h1>
+                </div>
+
+                <div class="ml-auto mr-3">
+                    <div class="row">
+                    <form method="GET" action="{% url 'export_assessment_csv' %}">
+                        <button id="assessment-btn" type="submit" class="btn ml-4 mr-4">Export องค์1 CSV</button>
+                    </form>
+                    <form method="GET" action="{% url 'export_aun_csv' %}">
+                        <button id="assessment-btn" type="submit" class="btn mr-4">Export AUN CSV</button>
+                    </form>
+                    </div>
+                </div>
+
+                {% endif %}
+            </div>
+        </div>
+        <br />
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="all_assessment-container2" class="navbar navbar-expand-lg">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+                <!-- FILTER: Faculties -->
+                <li id="faculties-nav-dropdown" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        คณะ
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% for key, value in faculties.items %}
+                            <a class="dropdown-item" href="{{key}}">{{ value }}</a>
+                        {% endfor %}
+                    </div>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0" action="{% url 'all_assessment' current_page %}" method="get">
+                <!-- submit query -->
+                <div class="md-form mt-0 mr-3">
+                    <i class="fas fa-search" style="color: white;" aria-hidden="true"></i>
+                    <input class="form-control col-md-12 mr-sm-2 ml-2" name="faculty_name" type="search" placeholder="Search Program..."
+                        aria-label="Search" value={{request.GET.faculty_name}}>
+                </div>
+            </form>
+        </div>
+    </nav>
+
+    <!-- PROFESSOR LIST -->
+    <div id="assessment-list" class="bg-light">
+        <ul class="list-group">
+            {% for assessment in assessments %}
+            <a class="list-group-item list-group-item-light bg-light" href="{% url 'assessment_result' assessment.id %}">
+                <h6 style="text-align: left; width:98%; display: inline-block;">
+                    {{ assessment.year}} : {{ assessment.program_id }}
+                </h6>
+                <h6 style="text-align: right; display: inline-block;">
+                    <i id="angle-right-icon" class="fas fa-angle-right"></i>
+                </h6>
+            </a>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+    <!-- CHANGE PAGE -->
+    <div id="all_assessment-container" class="container text-center">
+        <div class="btn-group" role="group" aria-label="Basic example">
+
+            <div class="pagination">
+
+                {% if assessments.has_previous %}
+                <a class="pagination-action" href="?page=1">
+                    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                </a>
+                <a class="pagination-action" href="?page={{ assessments.previous_page_number }}">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+                {% endif %}
+
+                {% for num in assessments.paginator.page_range %}
+
+                {% if assessments.number == num %}
+                <span class="pagination-number pagination-current">{{ num }}</span>
+                {% elif num > assessments.number|add:'-3' and num < assessments.number|add:'3' %}
+                <a class="pagination-number" href="?page={{ num }}">{{ num }}</a>
+                {% endif %}
+
+                {% endfor %}
+
+                {% if assessments.has_next %}
+                <a class="pagination-action" href="?page={{ assessments.next_page_number }}">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+                <a class="pagination-action" href="?page={{ assessments.paginator.num_pages }}">
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                </a>
+                {% endif %}
+                <br />
+            </div>
+
+            <br />
+        </div>
+        <br />
+    </div>
+
+</div>
+
+{% endblock %}

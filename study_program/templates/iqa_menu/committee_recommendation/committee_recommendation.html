@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <br />
+    <br />
+    <div id="all_professor-container" class="container">
+        <br />
+        <div class="col">
+            <div class="row">
+                <div class="col-md-10">
+                    <h1 style="color: white;">Committee Recommendation</h1>
+                </div>
+
+                <div class="ml-auto">
+                    <form method="GET" action="{% url 'export_committee_recommendation_csv' %}">
+                        <button id="professor-btn" type="submit" class="btn mr-4">Export CSV</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br />
+        
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="all_professor-container2" class="navbar navbar-expand-lg">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="ml-auto">
+                <form class="form-inline my-2 my-lg-0" action="{% url 'committee_recommendation' %}" method="get">
+                    <!-- submit query -->
+                    <div class="md-form mt-0 ml-4 mr-2">
+                        <i class="fas fa-search" style="color: white;" aria-hidden="true"></i>
+                        <input class="form-control col-md-12 mr-sm-2 ml-2" name="faculty_name" type="search" placeholder="Search Program..."
+                            aria-label="Search" value={{request.GET.faculty_name}}>
+                    </div>
+                </form>
+            </div>       
+        </div>
+    </nav>
+
+    
+    {% for key,value in committee_recommendation_dict.items %}
+    <div id="committee_recommendation-program-container" class="container">
+        <h4 style="padding:5px;margin-top: 10px; margin-bottom: 20px; background-color:#F9B346; color:white; border-radius: 3px;">&emsp;{{ key }}</h4> 
+        {% for committee_list in value %}
+            {% for key2, value2 in committee_list.items %}
+            <div style=" color:black; margin-bottom:3px; padding-bottom:3px; border-radius: 5px;" class="container">
+        
+                <h5 style="color:#F9B346;">{{ key2 }}</h5>
+                {% for committee in value2 %}
+                <div style="color:black; background-color:white; border-radius: 5px; padding-top:3px, padding-bottom:3px" class="container">
+
+                    <h6>{{ committee }}</h6> 
+
+                </div>
+                {% endfor %}
+      
+            </div>
+            {% endfor %}
+           
+        {% endfor %}
+
+    </div>
+    {% endfor %}
+
+
+    <!-- <div class="container"  style="text-align: center;">
+        <div class="row" style="text-align: center;">
+            <h2>&emsp;&emsp;&emsp;&emsp;&emsp;</h2>
+            <form method="GET" action="{% url 'committee_recommendation' previous_page %}">
+                <button style="color: #F9B346;  text-align: center;" type="submit" class="btn mr-4">prev</button>
+            </form>
+            <h2 style="color:#F9B346;"  class="text-center">{{current_page}}</h2>
+            <form method="GET" action="{% url 'committee_recommendation' next_page %}">
+                <button style="color: #F9B346;  text-align: center;" type="submit" class="btn mr-4">next</button>
+            </form>
+        </div>
+    </div> -->
+
+    <div id="all_professor-container" class="container text-center">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <form method="GET" action="{% url 'committee_recommendation' previous_page %}">
+                <button id="committee_recommendation-page-btn" type="submit" class="btn">prev</button>
+            </form>
+            <div id="committee_recommendation-page-current-btn">{{current_page}}</div>
+            <form method="GET" action="{% url 'committee_recommendation' next_page %}">
+                <button id="committee_recommendation-page-btn" type="submit" class="btn">next</button>
+            </form>
+        </div>
+    </div>
+  
+    
+</div>
+
+
+
+{% endblock %}
