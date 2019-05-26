@@ -5,7 +5,14 @@
 <div class="container">
 
     <br />
-    <br />
+    <a href="{% url 'main_menu' %}">home</a> 
+    <i id="long-arrow-alt-right" class="fas fa-long-arrow-alt-right"></i> 
+    <a href="{% url 'assessment_menu' %}">assessment menu</a> 
+    <i id="long-arrow-alt-right" class="fas fa-long-arrow-alt-right"></i>
+    <a href="{% url 'all_assessment' %}">all assessment</a> 
+    <i id="long-arrow-alt-right" class="fas fa-long-arrow-alt-right"></i>
+    {{ assessment_result.program_id }}({{assessment_result.year}})
+    <br /><br />
 
     <div id="assessment_result-container-title" class="container">
         <br />
@@ -18,7 +25,7 @@
                 <!-- EDIT -->
                 <div class="ml-auto">
                     <form method="GET" action="{% url 'edit_assessment_result' assessment_id %}">
-                        <button id="assessment-btn" type="submit" class="btn btn-outline-success">Edit Profile</button>
+                        <button id="assessment-btn" type="submit" class="btn btn-outline-success mr-2">Edit Profile</button>
                     </form>
                 </div>
                 {% else %}

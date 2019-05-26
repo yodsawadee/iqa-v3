@@ -5,7 +5,14 @@
 <div class="container">
 
     <br />
-    <br />
+    <a href="{% url 'main_menu' %}">home</a> 
+    <i id="long-arrow-alt-right" class="fas fa-long-arrow-alt-right"></i> 
+    <a href="{% url 'assessment_menu' %}">assessment menu</a> 
+    <i id="long-arrow-alt-right" class="fas fa-long-arrow-alt-right"></i>
+    <a href="{% url 'all_committee' %}">all committee</a> 
+    <i id="long-arrow-alt-right" class="fas fa-long-arrow-alt-right"></i>
+    {{ committee_detail.professor_id.name_surname }}
+    <br /><br />
 
     <div id="committee_detail-container-title" class="container">
         <br />
@@ -18,7 +25,7 @@
                 <!-- EDIT -->
                 <div class="ml-auto">
                     <form method="GET" action="{% url 'edit_committee_profile' committee_id %}">
-                        <button id="committee-btn" type="submit" class="btn btn-outline-success">Edit Profile</button>
+                        <button id="committee-btn" type="submit" class="btn btn-outline-success mr-2">Edit Profile</button>
                     </form>
                 </div>
                 {% else %}
@@ -39,7 +46,7 @@
                 <h5><b style="color:black;">profession:</b> {{ committee_detail.profession }}</h5>
             </div>
             <div class="ml-auto mr-3">
-                <a id="committee-btn2" class="btn btn-outline-success" href="{% url 'professor_profile' professor_profile %}">FULL PROFILE</a>
+                <a id="committee-btn2" class="btn btn-outline-success mr-2" href="{% url 'professor_profile' professor_profile %}">FULL PROFILE</a>
             </div>
         </div>
     </div>

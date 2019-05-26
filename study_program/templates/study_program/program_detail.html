@@ -5,7 +5,12 @@
 <div class="container">
 
     <br />
-    <br />
+    <a href="{% url 'main_menu' %}">home</a>
+    <i id="long-arrow-alt-right" class="fas fa-long-arrow-alt-right"></i>
+    <a href="{% url 'all_program' %}">study program</a>
+    <i id="long-arrow-alt-right" class="fas fa-long-arrow-alt-right"></i>
+    {{ program_detail.name }}
+    <br /><br />
 
     <div id="program_detail-container-title" class="container">
         <br />
@@ -18,7 +23,7 @@
                 <!-- EDIT -->
                 <div class="ml-auto">
                     <form method="GET" action="{% url 'edit_study_program' program_id %}">
-                        <button id="studyProgram-btn" type="submit" class="btn btn-outline-success">Edit Profile</button>
+                        <button id="studyProgram-btn" type="submit" class="btn btn-outline-success mr-2">Edit Profile</button>
                     </form>
                 </div>
                 {% else %}

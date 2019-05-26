@@ -1025,3 +1025,10 @@ nav.navbar.navbar-expand-lg {
     font-weight: bolder;
     text-decoration: none;
 }
+
+
+
+#long-arrow-alt-right {
+    padding-left: 20px;
+    padding-right: 20px;
+}

@@ -6,10 +6,10 @@
 
 <div class="container">
     <br />
-    <br />
-    <a href="{% url 'main_menu' %}">home</a> > study program
-    <br />
-    <br />
+    <a href="{% url 'main_menu' %}">home</a>
+    <i id="long-arrow-alt-right" class="fas fa-long-arrow-alt-right"></i>
+    study program
+    <br /><br />
     <!-- create from message -->
     {% if messages %}
         {% for message in messages %}

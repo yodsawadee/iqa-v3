@@ -2,11 +2,15 @@
 
 {% block content %}
 
-
 <div class="container">
 
     <br />
-    <br />
+    <a href="{% url 'main_menu' %}">home</a>
+    <i id="long-arrow-alt-right" class="fas fa-long-arrow-alt-right"></i>
+    <a href="{% url 'all_professor' %}">all professor</a>
+    <i id="long-arrow-alt-right" class="fas fa-long-arrow-alt-right"></i>
+    {{ professor_profile.academic_title }}{{ professor_profile.name_surname }}
+    <br /><br />
 
     <!-- TITLE -->
     <div id="professor_profile-container-title" class="container">
@@ -15,17 +19,17 @@
             <div class="row">
                 {% if request.user.is_superuser %}
                 <div class="col-md-10 mr-2">
-                    <h3 style="color: white;">{{ professor_profile.academic_title }} {{ professor_profile.name_surname }}</h3>
+                    <h3 style="color: white;">{{ professor_profile.academic_title }}{{ professor_profile.name_surname }}</h3>
                 </div>
                 <!-- EDIT -->
                 <div class="ml-auto">
                     <form method="GET" action="{% url 'edit_professor_profile' professor_id %}">
-                        <button id="professor-btn" type="submit" class="btn btn-outline-success">Edit Profile</button>
+                        <button id="professor-btn" type="submit" class="btn btn-outline-success mr-2">Edit Profile</button>
                     </form>
                 </div>
                 {% else %}
                 <div class="col">
-                    <h3 style="color: white;">{{ professor_profile.academic_title }} {{ professor_profile.name_surname }}</h3>
+                    <h3 style="color: white;">{{ professor_profile.academic_title }}{{ professor_profile.name_surname }}</h3>
                 </div>
                 {% endif %}
             </div>
